@@ -5,6 +5,11 @@ npm ci
 npm run build
 Pop-Location
 
+Push-Location "fetch"
+npm ci
+npm run build
+Pop-Location
+
 Push-Location "config-yaml"
 npm ci
 npm run build

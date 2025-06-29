@@ -76,6 +76,9 @@ if (($null -eq $node)) {
 Write-Host "`nInstalling root-level dependencies..." -ForegroundColor White
 npm install
 
+Write-Host "`nBuilding foundational internal packages..." -ForegroundColor White
+.\scripts\build-packages.ps1
+
 Write-Host "`nBuilding config-yaml..." -ForegroundColor White
 Push-Location packages/config-yaml
 npm install
